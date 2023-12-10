@@ -26,6 +26,12 @@ Remove-Item -Recurse -Force [file]
 (Get-PSReadlineOption).HistorySavePath
 ```
 
+#### PWshell equivalent of 'cat /etc/passwd | awk -F: "{print $1}"'
+```
+# Alias: glu
+Get-LocalUser
+```
+
 #### PWshell equivalent of 'systemctl status [service] || service [service] status'
 ```
 # Alias: gsv
