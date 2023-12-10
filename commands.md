@@ -1,7 +1,13 @@
-# PWshell command history file location.
+# PWshell equivalent of 'man [command]'
 ```
-# to check path to history file
-(Get-PSReadlineOption).HistorySavePath
+# Aliases: None
+Get-Help [command]
+```
+
+# PWshell equivalent of 'ls -laR'
+```
+# Aliases: gci, ls, dir
+Get-ChildItem -Force -Recurse
 ```
 
 # PWshell equivalent of 'rm -rf [file]'
@@ -10,10 +16,10 @@
 Remove-Item -Recurse -Force [file]
 ```
 
-# PWshell equivalent of 'ls -laR'
+# PWshell command history file location.
 ```
-# Aliases: gci, ls, dir
-Get-ChildItem -Force -Recurse
+# to check path to history file
+(Get-PSReadlineOption).HistorySavePath
 ```
 
 # PWshell equivalent of 'systemctl status [service] || service [service] status'
