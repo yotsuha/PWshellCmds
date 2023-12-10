@@ -7,31 +7,29 @@
 # PWshell equivalent of 'rm -rf [file]'
 ```
 # Aliases: ri, rm, rmdir, del, erase, rd
-rm -Recurse -Force [file]
+Remove-Item -Recurse -Force [file]
 ```
 
-# PWshell equivalent of 'ls -lAR'
+# PWshell equivalent of 'ls -laR'
 ```
 # Aliases: gci, ls, dir
-ls -Force -Recurse
-```
-
-# PWshell equivalent of 'systemctl start [service] || service [service] start'
-```
-# Aliases: sasv
-Start-Service [service]
-```
-
-# PWshell equivalent of 'systemctl stop [service] || service [service] stop'
-```
-# Aliases: spsv
-Stop-Service [service]
+Get-ChildItem -Force -Recurse
 ```
 
 # PWshell equivalent of 'systemctl status [service] || service [service] status'
 ```
 # Alias: gsv
-Get-Service [service]
-# or
-Service [service]
+Get-Service [service] || Service [service]
+```
+
+# PWshell equivalent of 'systemctl start [service] || service [service] start'
+```
+# Alias: sasv
+Start-Service [service]
+```
+
+# PWshell equivalent of 'systemctl stop [service] || service [service] stop'
+```
+# Alias: spsv
+Stop-Service [service]
 ```
