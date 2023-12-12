@@ -8,10 +8,34 @@
 Get-Help [command]
 ```
 
+#### PWshell equivalent of 'echo [string]'
+```
+# Aliases: write, echo
+Write-Output [string]
+```
+
+#### PWshell equivalent of 'echo [string] >&2'
+```
+# Aliases: write, echo
+Write-Error [string]
+```
+
 #### PWshell equivalent of 'ls -laR'
 ```
 # Aliases: gci, ls, dir
 Get-ChildItem -Force -Recurse
+```
+
+#### PWshell equivalent of 'cp [target] [destination]'
+```
+# Aliases: cpi, cp, copy
+Copy-Item [target] [destination]
+```
+
+#### PWshell equivalent of 'cp [target] [destination]'
+```
+# Aliases: mi, mv, move
+Move-Item [target] [destination]
 ```
 
 #### PWshell equivalent of 'rm -rf [file]'
