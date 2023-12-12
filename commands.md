@@ -8,6 +8,12 @@
 Get-Help [command]
 ```
 
+#### PWshell equivalent of 'cat [file] | grep [string]'
+```
+# Alias: sls
+Get-Content [file] | Select-String [string]
+```
+
 #### PWshell equivalent of 'echo [string]'
 ```
 # Aliases: write, echo
