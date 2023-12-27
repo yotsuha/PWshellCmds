@@ -8,6 +8,12 @@
 PowerShell -WindowStyle Hidden -Command [command]
 ```
 
+#### PWshell command to get items from an object
+```
+Aliases: None
+([object]).[item]
+```
+
 #### PWshell equivalent of 'man [command]'
 ```
 # Aliases: None
