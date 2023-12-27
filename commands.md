@@ -2,6 +2,12 @@
 
 <details><summary><h3>PWshell equivalents of Linux commands</h3></summary>
 
+#### PWshell equivalent of 'bash -c "[command] &"' (running script in the backgroud/hidden)
+```
+# Aliases: None
+PowerShell -WindowStyle Hidden -Command [command]
+```
+
 #### PWshell equivalent of 'man [command]'
 ```
 # Aliases: None
